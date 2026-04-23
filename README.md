@@ -13,7 +13,7 @@ This repository provides an automated pipeline to bridge the gap between raw geo
 ## 🧮 Methodology
 The calculator utilizes Green's Theorem to evaluate area integrals along the boundary of the detected shapes:
     <p align="center">
-        <font size="+2"> 
+        <font size="+10"> 
             $$A = \iint_D dA = \oint_{\partial D} x \, dy$$
         </font>
     </p>
