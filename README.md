@@ -35,9 +35,6 @@ This project relies on OpenCV for image processing and ezdxf for CAD parsing. In
 Process a CAD File (.dxf)
 To calculate properties for a specific CAD drawing, run:
 
-    python main.py --input ./examples/beam_section.dxf
+    python section_properties_calculator.py
 
-Process an Image (.png/.jpg)
-To extract a section from an image via edge detection, specify the file and a scale factor:
-    
-    python main.py --image ./examples/test_section.png --scale 1.0
+After running script, script will ask the path of target CAD file and show all section properties. Also, section property report is able to be exported by PDF file.
