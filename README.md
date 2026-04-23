@@ -10,6 +10,11 @@ A high-performance Python tool designed to calculate structural section properti
 ## 📖 Overview
 This repository provides an automated pipeline to bridge the gap between raw geometry and structural analysis. Whether you have a legacy hand-drawn sketch or a complex built-up DXF profile, this tool extracts the boundary and computes the technical data required for engineering design.
 
+## 🧮 Methodology
+The calculator utilizes Green's Theorem to evaluate area integrals along the boundary of the detected shapes:
+$$A = \iint_D dA = \oint_{\partial D} x \, dy
+$$$$I_x = \iint_D y^2 \, dA = \oint_{\partial D} \frac{y^3}{3} \, dx$$
+
 ## 🛠 1. Installation
 
 ### Clone the Repository
@@ -18,4 +23,14 @@ This repository provides an automated pipeline to bridge the gap between raw geo
 
 
 ## 📦 2. Install Dependencies
-This project relies on OpenCV for image processing and ezdxf for CAD parsing. Install all requirements using the following command:
+# This project relies on OpenCV for image processing and ezdxf for CAD parsing. Install all requirements using the following command:
+    pip install -r requirements.txt
+
+## 🚀 3. Quick Start
+# Process a CAD File (.dxf)
+# To calculate properties for a specific CAD drawing, run:
+    python main.py --input ./examples/beam_section.dxf
+
+# Process an Image (.png/.jpg)
+# To extract a section from an image via edge detection, specify the file and a scale factor:
+    python main.py --image ./examples/test_section.png --scale 1.0
