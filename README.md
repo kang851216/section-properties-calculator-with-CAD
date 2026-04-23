@@ -13,7 +13,6 @@ This repository provides an automated pipeline to bridge the gap between raw geo
 ## 🛠 1. Installation
 
 ### Clone the Repository
-    ```bash
     git clone [https://github.com/kang851216/section-properties-calculator-with-CAD.git](https://github.com/kang851216/section-properties-calculator-with-CAD.git)
     cd section-properties-calculator-with-CAD
 
