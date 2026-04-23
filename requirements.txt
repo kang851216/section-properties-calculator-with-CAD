@@ -1,0 +1,17 @@
+# --- Core Engineering & Geometry ---
+# For calculating section properties (Area, Inertia, Modulus)
+sectionproperties>=3.0.0
+shapely>=2.0.0
+
+# --- CAD & Image Processing ---
+# For parsing .dxf files
+ezdxf>=1.1.0
+
+# For image edge detection and processing
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# --- Visualization & Utilities ---
+# For plotting the sections and results
+matplotlib>=3.7.0
+scipy>=1.10.0
