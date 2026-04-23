@@ -27,14 +27,14 @@ $$I_x = \iint_D y^2 \, dA = \oint_{\partial D} \frac{y^3}{3} \, dx$$
 
 
 ## 📦 2. Install Dependencies
-# This project relies on OpenCV for image processing and ezdxf for CAD parsing. Install all requirements using the following command:
+### This project relies on OpenCV for image processing and ezdxf for CAD parsing. Install all requirements using the following command:
     pip install -r requirements.txt
 
 ## 🚀 3. Quick Start
-# Process a CAD File (.dxf)
-# To calculate properties for a specific CAD drawing, run:
+### Process a CAD File (.dxf)
+### To calculate properties for a specific CAD drawing, run:
     python main.py --input ./examples/beam_section.dxf
 
-# Process an Image (.png/.jpg)
-# To extract a section from an image via edge detection, specify the file and a scale factor:
+### Process an Image (.png/.jpg)
+### To extract a section from an image via edge detection, specify the file and a scale factor:
     python main.py --image ./examples/test_section.png --scale 1.0
