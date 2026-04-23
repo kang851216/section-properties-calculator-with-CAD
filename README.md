@@ -13,9 +13,11 @@ This repository provides an automated pipeline to bridge the gap between raw geo
 ## 🧮 Methodology
 The calculator utilizes Green's Theorem to evaluate area integrals along the boundary of the detected shapes:
 <h1 align="center">
-    # $$A = \iint_D dA = \oint_{\partial D} x \, dy$$
+    $$A = \iint_D dA = \oint_{\partial D} x \, dy$$
 </h1>
-# $$I_x = \iint_D y^2 \, dA = \oint_{\partial D} \frac{y^3}{3} \, dx$$
+<h1 align="center">
+$$I_x = \iint_D y^2 \, dA = \oint_{\partial D} \frac{y^3}{3} \, dx$$
+</h1>
 
 ## 🛠 1. Installation
 
